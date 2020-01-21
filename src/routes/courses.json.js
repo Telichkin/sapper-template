@@ -3,7 +3,7 @@ export function get(req, res) {
     'Content-Type': 'application/json',
   });
 
-  res.end(JSON.stringify([
+  setTimeout(() => res.end(JSON.stringify([
 		{
 			name: '«Вычислительный»',
 			descr: 'Научим ребенка свободно владеть счетом и получать от него удовольствие',
@@ -22,5 +22,5 @@ export function get(req, res) {
 				'Длительность: 1.5 месяца',
 			],
 		},
-	]));
+	])), 500);
 }

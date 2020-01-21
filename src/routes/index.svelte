@@ -23,7 +23,7 @@
 		<ul class="flex">
 			{#each links as link}
 			<li class="py-4 px-6 text-gray-200">
-				<a href="/#">{link}</a>
+				<a href="/courses">{link}</a>
 			</li>
 			{/each}
 		</ul>
